@@ -2,7 +2,7 @@
 
 ## Overview
 
-Basic project to get NFC Tag Emulation working for the nRF52832 running the Apache MyNewt RTOS. It targets the nRF52 DK (Nordic PCA10040) BSP.
+Basic project to get NFC Tag Emulation working for the nRF52832 running the Apache MyNewt RTOS. It targets the nRF52 DK (Nordic PCA10040) BSP. Based on the Apache MyNewt Blinky example.
 
 ## Issues
 
