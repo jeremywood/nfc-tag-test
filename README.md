@@ -4,6 +4,10 @@
 
 Basic project to get NFC Tag Emulation working for the nRF52832 running the Apache MyNewt RTOS. It targets the nRF52 DK (Nordic PCA10040) BSP.
 
+## Issues
+
+This does not currently work, `nfc_t4t_lib` does not seem to start NFC functionality as expected. Not sure whether the issue is in supporting functions `nfc_platform_setup`, etc, or the overall configuration.
+
 ## Building
 
 1. Download and install Apache Newt.
