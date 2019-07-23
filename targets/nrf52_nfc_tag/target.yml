@@ -1,0 +1,3 @@
+target.app: apps/nfc_tag
+target.bsp: "@apache-mynewt-core/hw/bsp/nordic_pca10040"
+target.build_profile: debug

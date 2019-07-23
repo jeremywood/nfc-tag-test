@@ -1,0 +1,34 @@
+pkg.name: apps/nfc_tag
+pkg.type: app
+pkg.description: NFC Tag Emulation Test Bed.
+pkg.author: "Jeremy Wood <jerwood@gmail.com>"
+pkg.homepage: "http://jeremywood.info/"
+pkg.keywords:
+
+pkg.deps:
+    - "@apache-mynewt-core/kernel/os"
+    - "@apache-mynewt-core/hw/hal"
+    - "@apache-mynewt-core/hw/mcu/nordic/nrf52xxx"
+    - "@apache-mynewt-core/sys/console/full"
+    - "@apache-mynewt-core/sys/log/full"
+
+pkg.cflags:
+    - "-DNRFX_NFCT_ENABLED=1"
+    - "-DNRF_CLOCK_ENABLED=1"
+    - "-DNRFX_CLOCK_ENABLED=1"
+    - "-DNRFX_PRS_ENABLED=1"
+    - "-DNRFX_PRS_BOX_4_ENABLED=1"
+    - "-DNRFX_CLOCK_CONFIG_LF_SRC=1"
+    - "-DNRFX_CLOCK_CONFIG_IRQ_PRIORITY=6"
+    - "-DNFC_T4T_HAL_ENABLED=1"
+    - "-DNFC_NDEF_MSG_TAG_TYPE=4"
+    - "-DNFC_NDEF_RECORD_ENABLED=1"
+    - "-DNFC_NDEF_URI_MSG_ENABLED=1"
+    - "-DNFC_NDEF_URI_REC_ENABLED=1"
+    - "-DNRF52832_XXAA=1"
+    - "-DNRFX_NFCT_CONFIG_IRQ_PRIORITY=6"
+    - "-DNRFX_TIMER_ENABLED=1"
+    - "-DNRFX_TIMER4_ENABLED=1"
+    - "-DHAL_NFC_FIELD_TIMER_PERIOD=100"
+    - "-DNFC_PINS_AS_GPIO=0"
+    - "-DNFC_PLATFORM_ENABLED=1"

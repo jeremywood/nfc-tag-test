@@ -1,0 +1,3 @@
+syscfg.vals:
+    NFC_PINS_AS_GPIO: 0
+    HARDFLOAT: 1
